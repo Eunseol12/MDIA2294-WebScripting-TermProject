@@ -1,0 +1,195 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    font-family: "Playfair Display", serif;
+    font-optical-sizing: auto;
+    font-style: normal;
+}
+
+body{
+    margin: 0;
+    padding: 0;
+    width: 100%;
+    height: auto;
+    background-color: rgb(242 232 223);
+    }
+
+a {
+    text-decoration: none;
+}
+
+
+.header-container {
+    position: sticky; 
+    top: 0;
+    padding: 10%;
+    
+}
+.notification{
+    background-color:rgb(104, 128, 117);
+    display: flex;
+    justify-content: center;
+    padding: 15px;
+}
+
+.notification p{
+    color: white;
+    font-weight: 2em;
+}
+.global_nav {
+    position: relative;
+    display: flex;
+    align-items: center;
+    background-color: rgb(207, 191, 178);
+    justify-content: space-between;
+    padding: 15px;
+}
+
+.global_nav >* {
+    margin-right: 2%;
+    padding: 2%;
+}
+.nav_links li a, .nav_menu li a {
+    text-decoration: none; 
+    color: black; 
+    padding-right: 5px;
+    list-style-type: none;
+}
+/* after header */
+.bg_home{
+    position: relative;
+    display: flex;
+    flex-direction: column; 
+    align-items: center; 
+}
+
+.welcome {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-bottom: 20px; 
+}
+
+.welcome img{
+    width: 100%;
+    height: auto;
+}
+
+.welcome_msg, .test_msg {
+    display: flex;
+    justify-content: center;
+    z-index: 1;
+    padding: 20px;
+}
+
+.shop_by {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.women,
+.men {
+    position: relative;
+    display: flex;
+    margin-bottom: 20px;
+    justify-content: center;
+}
+.btn_w, .btn_w {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    z-index: 1;
+}
+
+.women >*,
+.men >* {
+    margin-right: 20px;
+}
+
+.img_w1,
+.img_w2,
+.img_m1,
+.img_m2 {
+    position: relative;
+    flex-direction: column;
+    align-items: center;
+}
+
+
+
+.testimonial {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+
+.footer_container {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    background-color: rgb(207, 191, 178);
+    align-items: center;
+    padding: 2%;
+}
+
+.sns, .address, .subscribe {
+    justify-content: center;
+}
+
+
+/* About page */
+
+.ethic, .processing {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    padding: 20px;
+}
+
+.img_ethic, .img_process {
+    position: relative;
+    display: flex;
+    justify-content: center;
+
+}
+
+.ethical_msg, .processing_msg {
+    position: relative;
+    padding: 20px;
+    display: flex;
+    justify-content: center;
+    z-index: 1;
+}
+
+/* Men/women/accessories page */
+
+.bg_men, .bg_women, .bg_accessories {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+}
+
+.men_msg, .women_msg, .accessoreis_msg {
+    position: relative;
+    padding: 20px;
+    display: flex;
+    justify-content: center;
+    z-index: 1
+}
+
+.product_details {
+    position: relative;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+
+.product_details >* {
+    margin-right: 5%;
+    padding: 5%;
+}

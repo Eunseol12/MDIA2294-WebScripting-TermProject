@@ -316,3 +316,20 @@ body {
     padding: 20px;
 }
 
+@media (max-width: 375px) {
+    .header-container {padding: 3%;}
+    .notification {padding: 5px;}
+    .global_nav {padding: 5px;}
+}
+
+@media (min-width: 376px)and (max-width:768px){
+    .header-container {padding:4%;}
+    .notification {padding: 8px;}
+    .global_nav {padding: 8px;}
+}
+
+@media (min-width:769px) and (max-width:1440px) {
+    .header-container {padding:5%;}
+    .notification {padding: 10px;}
+    .global_nav {padding: 10px;}
+}

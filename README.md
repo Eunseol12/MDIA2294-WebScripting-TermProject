@@ -1,2 +1,2 @@
-# MDIA1472-MobileWeb
-Mobile Web Term project
+# MDIA2294-WebScripting-TermProject
+Web Scripting Term project

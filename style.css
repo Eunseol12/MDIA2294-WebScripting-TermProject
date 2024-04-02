@@ -108,13 +108,11 @@ body {
 /* after header */
 .bg_home {
     width: 100%;
-    height: 300px; 
-    background-color: gray;
+    height: auto;
     position: relative;
     display: flex;
     flex-direction: column;
     align-items: center;
-    margin-bottom: 10px;
 }
 
 .welcome {
@@ -124,15 +122,15 @@ body {
     display: flex;
     flex-direction: column;
     align-items: center;
-    margin-bottom: 10px; 
 }
 
 .welcome_msg {
     position: absolute;
-    top: 60%; 
-    left: 50%; 
+    top: 80%; 
+    left: 65%; 
     transform: translate(-50%, -50%);
-    padding: 10px; 
+    padding: 5px; 
+    font-size: 1.5em;
 }
 
 .shop_by {
@@ -144,22 +142,20 @@ body {
 .women,
 .men {
     width: 100%;
-    height: 300px; 
-    background-color: gray;
+    height: auto;
     position: relative;
     display: flex;
-    margin-bottom: 10px; 
     justify-content: center;
 }
 
 .btn_w,
 .btn_m {
-    width: 80px;
-    height: 30px; 
-    background-color: rgb(59, 58, 58);
-    border-radius: 20px;
+    width: 20%;
+    height: 5%; 
+    background-color: rgb(207,191,178);
+    border-radius: 25px;
     position: absolute;
-    top: 50%;
+    top: 40%;
     z-index: 1;
 }
 
@@ -168,12 +164,13 @@ body {
     display: flex;
     justify-content: center;
     color: white;
-    font-size: 0.8em;
+    font-size: 1.5em;
+    padding: 5%;
 }
 
 .women > *,
 .men > * {
-    margin-right: 10px; 
+    margin-right: 2%; 
 }
 
 .img_w1,
@@ -183,8 +180,8 @@ body {
     position: relative;
     flex-direction: column;
     align-items: center;
-    width: 150px; 
-    height: 250px;
+    width: 70%; 
+    height: auto;
     background-color: lightgray;
     margin-top: 1%;
 }
@@ -217,27 +214,6 @@ body {
     background-color: lightgray;
 }
 
-.footer_container {
-    position: relative;
-    display: flex;
-    align-items: center;
-    background-color: rgb(207, 191, 178);
-    justify-content: space-between;
-}
-.footer_container> * {
-    margin: 1%;
-    padding: 1%;
-    position: relative;
-    flex-direction: column;
-    background-color: white;
-}
-
-
-.sns,
-.address,
-.subscribe {
-    justify-content: center;
-}
 
 /* About page */
 
@@ -378,4 +354,50 @@ body {
     .header-container {padding:5%;}
     .notification {padding: 10px;}
     .global_nav {padding: 10px;}
+}
+
+
+
+/* Footer */
+.footer_container {
+    display: flex;
+    align-items: top;
+    background-color: rgb(207, 191, 178);
+    justify-content: center;
+}
+.footer_container> * {
+    margin: 0.1%;
+    padding: 1.5%;
+    position: relative;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.footer_container >div {
+    flex: 1;
+    margin: 0 10px;
+    padding: 1%;
+    position: relative;
+    flex-direction: column;
+}
+.bottom_footer{
+    margin: 0;
+}
+
+.sns,
+.address,
+.subscribe {
+    justify-content: center;
+}
+
+.twitter,
+.instagram,
+.youtube,
+.share {
+    width: 20%;
+    height: auto;
+    display: flex;
+    justify-content: center;
+    margin: 0;
+    padding: 0;
 }

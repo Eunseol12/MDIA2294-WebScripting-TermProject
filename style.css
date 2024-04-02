@@ -315,10 +315,10 @@ body {
 }
 
 
-.product_details1,
-.product_details2,
-.product_details3,
-.product_details4 {
+.product_hoodie,
+.product_tshirts,
+.product_shirts,
+.product_pants {
     width: 100%;
     height: 500px;
     background-color: gray;
@@ -331,7 +331,7 @@ body {
 .hoodie_details,
 .tshirts_details,
 .shirts_details,
-.pants_detials,
+.pants_details,
 .bags_details,
 .hats_details,
 .socks_details {

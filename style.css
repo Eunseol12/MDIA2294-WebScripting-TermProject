@@ -3,9 +3,6 @@
     box-sizing: border-box;
     margin: 0;
     padding: 0;
-    font-family: "Playfair Display", serif;
-    font-optical-sizing: auto;
-    font-style: normal;
     list-style-type: none;
 }
 
@@ -14,11 +11,16 @@ body {
     padding: 0;
     width: 100%;
     height: auto;
+    display: inline-block;
     background-color: rgb(242 232 223);
+    font-family: "Playfair Display", serif, "Plus Jakarta Sans", sans-serif;
+    font-optical-sizing: auto;
+    font-style: normal;
+    list-style-type: none;
+    
 }
 
 .header-container {
-    position: sticky;
     top: 0;
     padding: 5%;
 }
@@ -27,7 +29,7 @@ body {
     background-color: rgb(104, 128, 117);
     display: flex;
     justify-content: center;
-    padding: 10px; 
+    padding: 10px;
 }
 
 .notification p {
@@ -41,16 +43,16 @@ body {
     position: relative;
     display: flex;
     align-items: center;
-    background-color: rgb(207, 191, 178);
     justify-content: space-between;
     
 }
 
 .logo_container {
-    width: 200px;
-    height: 200px;
+    width: 100px;
+    height: 100px;
     overflow: hidden;
     display: inline-block;
+
 }
 
 .nav_logo {
@@ -74,7 +76,7 @@ body {
 .nav_links li a,
 .nav_menu li a {
     display: block;
-    padding: 10px;
+    padding: 20px;
     text-decoration: none;
     color: black;
     list-style-type: none;
@@ -134,10 +136,8 @@ body {
 .welcome_msg {
     position: absolute;
     width: 100%;
-    top: 70%; 
-    left: 70%;
-    transform: translate(-50%, -50%); 
-    font-size: 2em;
+    transform: translate(50% -50%); 
+    font-size: 1.5em;
 }
 
 .shop_by {
@@ -154,11 +154,13 @@ body {
     display: flex;
     justify-content: center;
 }
-
+.shop_by {
+    position: relative;
+}
 .btn_w,
 .btn_m {
     width: 20%;
-    height: 5%; 
+    height: auto; 
     background-color: rgb(207,191,178);
     border-radius: 25px;
     position: absolute;
@@ -171,14 +173,11 @@ body {
     display: flex;
     justify-content: center;
     color: white;
-    font-size: 1em;
+    font-size: 2em;
     padding: 5%;
+    text-decoration: none;
 }
 
-.women > *,
-.men > * {
-    margin-right: 2%; 
-}
 
 .img_w1,
 .img_w2,
@@ -187,10 +186,10 @@ body {
     position: relative;
     flex-direction: column;
     align-items: center;
-    width: 70%; 
+    width: 100%; 
     height: auto;
     background-color: lightgray;
-    margin-top: 1%;
+    /* margin-top: 1%; */
 }
 
 
@@ -382,6 +381,13 @@ body {
     padding: 20px;
 }
 
+.footer_container1 > li,
+.fotter_container2 > li,
+.fotter_container3 > p {
+    font: 3em;
+}
+
+
 @media (max-width: 375px) {
     .header-container {padding: 3%;}
     .notification {padding: 5px;}
@@ -409,13 +415,13 @@ body {
     background-color: rgb(207, 191, 178);
     justify-content: center;
 }
-.footer_container> * {
+/* .footer_container> * {
     margin: 0.1%;
     padding: 1.5%;
     position: relative;
     flex-direction: column;
     justify-content: center;
-}
+} */
 
 .footer_container >div {
     flex: 1;
@@ -426,11 +432,8 @@ body {
 }
 .bottom_footer{
     margin: 0;
-}
-
-.sns,
-.address,
-.subscribe {
+    padding: 0;
+    display: flex;
     justify-content: center;
 }
 
@@ -438,10 +441,10 @@ body {
 .instagram,
 .youtube,
 .share {
-    width: 10%;
+    width: 50px;
     height: auto;
-    display: flex;
-    justify-content: center;
+    display: inline-block;
     margin: 0;
-    padding: 0;
+    padding: 5px;
+    justify-content: space-between;
 }

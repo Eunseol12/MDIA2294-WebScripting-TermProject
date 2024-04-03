@@ -91,7 +91,27 @@
     </div>
     <div class="testimonial">
         <p class="test_msg">What Our Clients Say About Us</p>
-        <img src="testimonials/testimonial1.png" alt="testimonial image" class="test_img">
+        <!-- <div class="testimonial_img">
+            <img src="testimonials/testimonial1.png" alt="testimonial image" class="test_img">
+            <button id="prev">Previous</button>
+            <button id="next">Next</button>
+        </div> -->
+        <div style="text-align: center;">
+            <table>
+                <tr>
+                    <td></td>
+                    <td style="text-align: center;">
+                        <div><img id="main-image" alt="customers reviews"></div>
+                        <div><input id="current-index" style="display:none"></div>
+                    </td>
+                    <td></td>
+                    
+                </tr>
+            </table>
+            <button id="prev">Previous</button>
+            <button id="next">Next</button>
+        </div>
+
     </div>
     <div>
         <footer class="footer_container">
@@ -132,6 +152,6 @@
             </div>
         </footer>
     </div>
-
+<script src="script.js"></script>
 </body>
 </html>

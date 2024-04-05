@@ -8,6 +8,9 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400..900;1,400..900&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/flickity/2.2.2/flickity.min.css">
+    
+
 </head>
 <body>
     <div class="header_containger">
@@ -64,53 +67,39 @@
             </nav>
         </header>
     </div>
-    <div id="ethic">   
-        <img src="images/ethical manufacturing.jpg" alt="Ethical background image" class="img_ethic">
-        <div>
-            <p class="ethical_msg">At Ecoway, we are not just proponents of a robust work ehtic. <br> <br> We are advocates armed with compelling statistics. <br><br> Our dedication to fostering a culture of hard work and diligence is reflected in the numbers.</p>
-        </div>
-    </div>
+        <div class="main-carousel">
+            <div class="carousel-cell-ethic">   
+                <img src="images/ethical manufacturing.jpg" alt="Ethical background image" class="img_ethic">
+                <div>
+                    <p class="ethical_msg">At Ecoway, we are not just proponents of a robust work ehtic. <br> <br> We are advocates armed with compelling statistics. <br><br> Our dedication to fostering a culture of hard work and diligence is reflected in the numbers.</p>
+                </div>
+            </div>
 
-    <div class="processing">   
-        <img src="images/process.jpg" alt="processing background image" class="img_process">
-        <div>
-            <p class="processing_msg">Advocating for seamless processes in Vancouver, EcoWay is dedicated to advancing efficiency. <br> <br> Join us as we pave the for streamlined success in our dynamic urban landscape.</p>
+            <div class="carousel-cell-processing">   
+                <img src="images/process.jpg" alt="processing background image" class="img_process">
+                <div>
+                    <p class="processing_msg">Advocating for seamless processes in Vancouver, EcoWay is dedicated to advancing efficiency. <br> <br> Join us as we pave the for streamlined success in our dynamic urban landscape.</p>
+                </div>
+                <div>
+                    <p class="support">
+                        "Your support not only contributes to the well-being of our Earth but also shapes a sustainable legacy for generations to come.<br>
+                        Together, let's make a positive impact on our planet"
+                    </p>
+                </div>
+            </div>
+            <div class="carousel-cell-environment">   
+                <img src="images/sea.jpg" alt="marine environment background image" class="img_sea">
+                <div>
+                    <p class="environment_msg">Discover tranquility in our online haven, where gentle encouragement neets mindful living. <br><br> Embrace the beauty of small, purposeful moments that resonate with your spirit.</p>
+                </div>
+            </div>
         </div>
-        <div>
-            <p class="support">
-                "Your support not only contributes to the well-being of our Earth but also shapes a sustainable legacy for generations to come.<br>
-                Together, let's make a positive impact on our planet"
-            </p>
-        </div>
-    </div>
-    <div class="environment">   
-        <img src="images/sea.jpg" alt="marine environment background image" class="img_sea">
-        <div>
-            <p class="environment_msg">Discover tranquility in our online haven, where gentle encouragement neets mindful living. <br><br> Embrace the beauty of small, purposeful moments that resonate with your spirit.</p>
-        </div>
-    </div>
     <div class="testimonial">
         <p class="test_msg">What Our Clients Say About Us</p>
-        <!-- <div class="testimonial_img">
+        <div class="testimonial_img">
             <img src="testimonials/testimonial1.png" alt="testimonial image" class="test_img">
-            <button id="prev">Previous</button>
-            <button id="next">Next</button>
-        </div> -->
-        <div style="text-align: center;">
-            <table>
-                <tr>
-                    <td></td>
-                    <td style="text-align: center;">
-                        <div><img id="main-image" alt="customers reviews"></div>
-                        <div><input id="current-index" style="display:none"></div>
-                    </td>
-                    <td></td>
-                    
-                </tr>
-            </table>
-            <button id="prev">Previous</button>
-            <button id="next">Next</button>
         </div>
+        
 
     </div>
     <div>
@@ -143,15 +132,11 @@
                     <input type="email" placeholder="Enter your email address">
                     <button class="signup_btn">sign up</button>
                 </div>
-                <div class="bottom_footer">
-                    <li><a href="#"><img src="images/twitter.png" alt="twitter" class="twitter"></a></li>
-                    <li><a href="#"><img src="images/instagram.png" alt="instagram" class="instagram"></a></li>
-                    <li><a href="#"><img src="images/youtube.png" alt="youtube" class="youtube"></a></li>
-                    <li><a href="#"><img src="images/share.png" alt="share" class="share"></a></li>
-                </div>
+                
             </div>
         </footer>
     </div>
-<script src="script.js"></script>
-</body>
+    <script src="script.js"></script>
+    </body>
+    
 </html>

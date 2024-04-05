@@ -210,7 +210,7 @@ body {
 .img_process,
 .img_sea {
     width: 100%;
-    height: auto;
+    height: 80%;
     position: relative;
     display: flex;
     justify-content: center;
@@ -259,11 +259,11 @@ body {
 
 .testimonial {
     width: 100%;
-    height: auto; 
     position: relative;
     display: flex;
     flex-direction: column;
     align-items: center;
+    padding: 10%;
 }
 
 .test_msg {
@@ -275,11 +275,18 @@ body {
     font-size: 2em;
 }
 
-.test_img {
+.testimonial_img {
+    position: relative;
     display: flex;
-    justify-content: center;
-    width: 50%; 
-    height: 90%; 
+    flex-direction: column;
+    align-items: center;
+    width: 50%;
+    padding: 10px;
+}
+
+.test_img {
+    width: 100%;
+    height: auto;
     padding: 10%;
 }
 

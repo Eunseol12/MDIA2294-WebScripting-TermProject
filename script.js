@@ -6,7 +6,6 @@ document.addEventListener('DOMContentLoaded', function () {
         pageDots: true,
         pageDots: true,
         prevNextButtons: false,
-        autoPlay: true,
         autoPlay: 5000,
         wrapAround: true
     });

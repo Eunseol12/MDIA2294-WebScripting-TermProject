@@ -13,14 +13,15 @@
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
-    <div class="header_containger">
+    <div class="header_container">
         <header class="notification">
             <p>Discover fresh eco-friendly arrivals <br>- where style meets sustainability</p>
         </header>
-        <header class="global_nav">
+        <header class="global_nav_DeskTablet">
+            <!-- Desktop and Tablet Navigation -->
             <nav>
                 <a href="index.html" class="logo_container">
-                <img src="images/logo.png" alt="Logo" class="nav_logo">
+                    <img src="images/logo.png" alt="Logo" class="nav_logo">
                 </a>
             </nav>
             <nav>
@@ -61,8 +62,16 @@
                     </li>
                 </ul>
             </nav>
+        </header>
+         <!-- Mobile Navigation -->
+        <header class="global_nav_Phone">
             <nav>
-                <!-- menu icon is only for mobile, tablet size -->
+                <a href="index.html" class="logo_container">
+                    <img src="images/logo.png" alt="Logo" class="nav_logo">
+                </a>
+            </nav>
+            <nav>
+                <!-- Menu icon is only for mobile, tablet size -->
                 <ul class="nav_menu">
                     <li><a href="#"><img src="images/search.png" alt="search" class="search"></a></li>
                     <li><a href="#"><img src="images/cart.png" alt="cart" class="cart"></a></li>
@@ -99,7 +108,7 @@
         
     </div>
     <div>
-        <footer class="footer_container">
+        <footer class="footer_container_deskTablet">
             <div class="footer_container1">
                 <div class="info">
                 <ul>
@@ -121,6 +130,23 @@
                         
                     </ul>
                 </div>
+                <div class="bottom_footer">
+                    <li><a href="#"><img src="images/twitter.png" alt="twitter" class="twitter"></a></li>
+                    <li><a href="#"><img src="images/instagram.png" alt="instagram" class="instagram"></a></li>
+                    <li><a href="#"><img src="images/youtube.png" alt="youtube" class="youtube"></a></li>
+                    <li><a href="#"><img src="images/share.png" alt="share" class="share"></a></li>
+                </div>
+            </div>
+                <div class="email_form">
+                    <p>Subscribe to our newsletter</p>
+                    <form action="#" method="post">
+                        <input type="email" name="email" placeholder="Your email address" required>
+                        <button type="submit">Subscribe</button>
+                    </form>
+                </div>
+        </footer>
+
+        <footer class="footer_container_phone">
                 <div class="bottom_footer">
                     <li><a href="#"><img src="images/twitter.png" alt="twitter" class="twitter"></a></li>
                     <li><a href="#"><img src="images/instagram.png" alt="instagram" class="instagram"></a></li>

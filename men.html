@@ -1,6 +1,18 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
+    <!-- <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>EcoWay</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400..900;1,400..900&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Expletus+Sans:ital,wght@0,400..700;1,400..700&family=Plus+Jakarta+Sans:ital,wght@0,200..800;1,200..800&family=Schoolbell&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/lightbox2/2.11.3/css/lightbox.min.css">
+    
+    <link rel="stylesheet" href="style.css"> -->
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>EcoWay</title>
@@ -10,6 +22,7 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Expletus+Sans:ital,wght@0,400..700;1,400..700&family=Plus+Jakarta+Sans:ital,wght@0,200..800;1,200..800&family=Schoolbell&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/lightbox2/2.11.3/css/lightbox.min.css">
     
     <link rel="stylesheet" href="style.css">
 </head>
@@ -72,22 +85,26 @@
     </div>
     <h1>Hoodies</h1>   
     <div id="product_hoodie">
-        <div class="hoodie_details">
-            <img src="men/h1.jpg" alt="men hoodie" class="hoodie">
-            <p>EcoBlend Cotton Hoodie <br> $29.99</p>
-        </div>
-        <div class="hoodie_details">
-            <img src="men/h2.jpg" alt="men hoodie" class="hoodie">
-            <p>Upcycled Comfort Hoodie <br> $25.99</p>
-        </div>
-        <div class="hoodie_details">
-            <img src="men/h3.jpg" alt="men hoodie" class="hoodie">
-            <p>Green Thread Basic <br> $34.99</p>
-        </div>
-        <div class="hoodie_details">
-            <img src="men/h4.jpg" alt="men hoodie" class="hoodie">
-            <p>EarthWise Hoodie <br> $45.99</p>
-        </div>
+        <a href="men/h1.jpg" data-lightbox="hoodie-gallery"></a>
+            <div class="hoodie_details">
+                <img src="men/h1.jpg" alt="men hoodie" class="hoodie" class="hover-zoom">
+                <p>EcoBlend Cotton Hoodie <br> $29.99</p>
+            </div>
+            <div class="hoodie_details">
+                <a href="men/h2.jpg" data-lightbox="hoodie-gallery"></a>
+                    <img src="men/h2.jpg" alt="men hoodie" class="hoodie" class="hover-zoom">
+                    <p>Upcycled Comfort Hoodie <br> $25.99</p>
+            </div>
+            <div class="hoodie_details">
+                <a href="men/h3.jpg" data-lightbox="hoodie-gallery"></a>
+                    <img src="men/h3.jpg" alt="men hoodie" class="hoodie" class="hover-zoom">
+                    <p>Green Thread Basic <br> $34.99</p>
+            </div>
+            <div class="hoodie_details">
+                <a href="men/h4.jpg" data-lightbox="hoodie-gallery"></a>
+                    <img src="men/h4.jpg" alt="men hoodie" class="hoodie" class="hover-zoom">
+                    <p>EarthWise Hoodie <br> $45.99</p>
+            </div>
     </div>
     <h1>T-shirt</h1>
     <div id="product_t">
@@ -186,8 +203,13 @@
         </footer>
     </div>
 
-    <script src="script.js"></script>
+    
     <script src="https://cdnjs.cloudflare.com/ajax/libs/flickity/2.2.2/flickity.pkgd.min.js"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/masonry/4.2.2/masonry.pkgd.min.js"></script>   
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/masonry/4.2.2/masonry.pkgd.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/lightbox2/2.11.3/js/lightbox.min.js"></script>
+
+
+    <script src="script.js"></script>
+   
 </body>
 </html>

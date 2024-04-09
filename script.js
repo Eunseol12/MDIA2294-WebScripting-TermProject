@@ -1,12 +1,13 @@
 //modal
-$(document).ready(function(){
-    $("#myBtn").click(function(){
-        $("#myModal").modal();
-    });
+
+document.addEventListener('DOMContentLoaded', function() {
+    var modal = document.getElementById('exampleModal');
+    var modalInstance = new bootstrap.Modal(modal);
+    modalInstance.show();
 });
 
 
-
+//about us
 document.addEventListener('DOMContentLoaded', function () {
     var elem = document.querySelector('#main-carousel');
     var flkty = new Flickity(elem, {
@@ -68,16 +69,10 @@ L.marker(bcit).addTo(map)
     .bindPopup('We are here')    
     .openPopup();
 
-
-
-document.addEventListener('DOMContentLoaded', function () {
-    var elem = document.querySelector('#testimonial-carousel');
-    var flkty = new Flickity(elem, {
-        cellAlign: 'left',
-        contain: true,
-        pageDots: true,
-        prevNextButtons: false,
-        autoPlay: 5000,
-        wrapAround: true
-    });
+//lightbox
+lightbox.option({
+    'resizeDuration': 200,
+    'wrapAround': true
 });
+
+

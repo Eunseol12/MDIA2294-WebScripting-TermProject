@@ -417,7 +417,13 @@ body {
     padding: 5%;
 }
 
+.hover-zoom {
+    transition: transform 0.5s;
+}
 
+.hover-zoom:hover {
+    transform: scale(1.2);
+}
 
 h1 {
     font-family: 'Playfair Display', serif;
@@ -632,24 +638,32 @@ label {
 }
 
 /* Button styles */
+.btn-close {
+    width: 10%;
+    height: 10%;
+    text-align: center;
+    background-color: rgb(207, 191, 178);
+    border-color: rgb(207, 191, 178);
+}
+
 .btn-primary {
-    width: 5%;
+    width: 10%;
     height: 10%;
     text-align: center;
     background-color: rgb(207, 191, 178);
     border-color: rgb(207, 191, 178);
 }
 .btn-secondary {
-    width: 5%;
+    width: 10%;
     height: 10%;
     text-align: center;
     background-color: white;
 }
 
-
-/* .modalfade{
-    display: none;
-} */
+.modal-header {
+    display: flex;
+    align-items: right;
+}
 
 .btn-primary:hover {
     background-color: rgb(149, 137, 127);

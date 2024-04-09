@@ -1,16 +1,29 @@
 //modal
 $(document).ready(function(){
-    $('#loginModal').modal({
-      backdrop: 'static',
-      keyboard: false
+    $("#myBtn").click(function(){
+        $("#myModal").modal();
     });
-  });
+});
+
+
+
 document.addEventListener('DOMContentLoaded', function () {
     var elem = document.querySelector('#main-carousel');
     var flkty = new Flickity(elem, {
         cellAlign: 'left',
         contain: true,
         pageDots: true,
+        prevNextButtons: false,
+        autoPlay: 5000,
+        wrapAround: true
+    });
+});
+
+document.addEventListener('DOMContentLoaded', function () {
+    var elem = document.querySelector('#testimonial-carousel');
+    var flkty = new Flickity(elem, {
+        cellAlign: 'left',
+        contain: true,
         pageDots: true,
         prevNextButtons: false,
         autoPlay: 5000,
@@ -62,7 +75,6 @@ document.addEventListener('DOMContentLoaded', function () {
     var flkty = new Flickity(elem, {
         cellAlign: 'left',
         contain: true,
-        pageDots: true,
         pageDots: true,
         prevNextButtons: false,
         autoPlay: 5000,

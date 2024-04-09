@@ -11,6 +11,8 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Expletus+Sans:ital,wght@0,400..700;1,400..700&family=Plus+Jakarta+Sans:ital,wght@0,200..800;1,200..800&family=Schoolbell&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="style.css">
+    <script src="https://unpkg.com/leaflet/dist/leaflet.js"></script>
+
 </head>
 <body>
     <div class="header_container">
@@ -47,13 +49,6 @@
                             <a href="wproduct_pants">Pants</a>                        
                         </div>
                     </li>
-                    <li><a href="accessories.html">Accesories</a>
-                        <div class="dropdown_menu">
-                            <a href="#">Bags</a>
-                            <a href="#">Hats</a>
-                            <a href="#">Socks</a>                       
-                        </div>
-                    </li>
                     <li><a href="contactUs.html">Contact Us</a>
                         <div class="dropdown_menu">
                             <a href="#">E-mail Us</a>          
@@ -62,7 +57,6 @@
                 </ul>
             </nav>
             <nav>
-                <!-- menu icon is only for mobile, tablet size -->
                 <ul class="nav_menu">
                     <li><a href="#"><img src="images/search.png" alt="search" class="search"></a></li>
                     <li><a href="#"><img src="images/cart.png" alt="cart" class="cart"></a></li>
@@ -73,12 +67,43 @@
         </header>
     </div>
 
-
+    <section id="contact">
+        <h1 class="section-header">Contact</h1>
+        <div class="contact-wrapper">
+            <form class="form-horizontal">
+                <div class="form-group">
+                    <input type="text" class="form-control" placeholder="Name">
+                </div>
+                <div class="form-group">
+                    <input type="email" class="form-control" placeholder="Email">
+                </div>
+                <textarea class="form-control" placeholder="Message" ></textarea>
+                <button type="submit" class="send-button">Send</button>
+            </form>
+            <div class="direct-contact-container">
+                <ul class="contact-list">
+                    <li><p class="contact-text">Vancouver, Canada</p></li>
+                    <li> <p class="contact-text"><a href="tel:1-123-456-7890">(123) 456-7890</a></p></li>
+                    <li><p class="contact-text"><a href="mailto:#">helloecoway@my.bcit.com</a></p></li>
+                </ul>
+                <hr>
+                <ul class="social-media-list">
+                    <li><a href="#"><img src="images/twitter.png" alt="twitter" class="twitter"></a></li>
+                    <li><a href="#"><img src="images/instagram.png" alt="instagram" class="instagram"></a></li>
+                    <li><a href="#"><img src="images/youtube.png" alt="youtube" class="youtube"></a></li>
+                    <li><a href="#"><img src="images/share.png" alt="share" class="share"></a></li>
+                </ul>
+            </div>
+        </div>
+    </section>
     
+
+    <div id="map" style="width: 100%; height: 200px;"></div>
 
 
     <h1 class="test_msg">What Our Clients Say About Us</h1>
     <div id="testimonial-carousel">
+        
         <div class="testimonial_img">
             <img src="testimonials/testimonial1.png" alt="testimonial image" class="test_img">
         </div>

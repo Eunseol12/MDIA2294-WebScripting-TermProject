@@ -37,12 +37,14 @@ body {
 }
 
 .header_container {
+    background-color: rgb(207, 191, 178);
     max-width: 100%;
     display: flex;
     flex-flow: column wrap;
 }
 
 .global_nav {
+    background-color: rgb(207, 191, 178);
     width: 100%;
     height: auto;
     position: relative;
@@ -146,6 +148,7 @@ body {
 }
 
 .shop_by {
+    background-color: rgb(242 232 223);
     max-width: 95%;
     position: relative;
     display: flex;
@@ -200,84 +203,6 @@ body {
 
 
 
-/* About page */
-
-#main-carousel {
-    width: 100%;
-    height: 700px;
-    overflow: hidden;
-}
-
-.carousel-cell-ethic,
-.carousel-cell-processing,
-.carousel-cell-environment {
-    width: 100%;
-    height: auto;
-    position: relative;
-    display: flex;
-    flex-direction: column;
-}
-
-.img_ethic,
-.img_process {
-    width: 100%;
-    height: auto;
-    position: relative;
-    display: flex;
-    justify-content: center;
-    opacity: 0.8;
-}
-
-
-.img_sea {
-    width: 100%;
-    height: auto;
-    position: relative;
-    display: flex;
-    justify-content: center;
-    object-fit: none;
-    opacity: 0.8;
-}
-
-.support {
-    display: flex;
-    justify-content: center;
-    width: 100%;
-    height: auto;
-    padding: 10%;
-    font-size: 1em;
-}
-
-.ethical_msg {
-    position: absolute;
-    width: 30%;
-    top: 50%; 
-    left: 20%;
-    transform: translate(-50%, -50%);
-    font-size: 1em;
-    color: black;
-   
-}
-
-.processing_msg {
-    position: absolute;
-    width: 30%;
-    top: 20%; 
-    left: 20%;
-    transform: translate(-50%, -50%);
-    font-size: 1em;
-    color: white;
-}
-.environment_msg {
-    position: absolute;
-    width: 30%;
-    top: 20%; 
-    left: 20%;
-    transform: translate(-50%, -50%);
-    font-size: 1em;
-    color: white;
-}
-
 .testimonial {
     width: 100%;
     position: relative;
@@ -323,7 +248,7 @@ body {
     
 }
 
-/* Men/women/accessories page */
+/* Men page */
 
 .bg_men{
     width: 100%;
@@ -350,9 +275,8 @@ body {
 
 
 
-.img_wstatement,
-.img_mstatement,
-.img_acstatement {
+
+.img_mstatement{
     width: 100%;
     max-height: 70vh;
     position: relative;
@@ -375,22 +299,13 @@ body {
 }
 
 
-.women_msg{
-    position: absolute;
-    width: 40%;
-    top: 70%; 
-    left: 25%;
-    transform: translate(-50%, -50%);
-    font-size: 1em;
-    color: black;
-    
-}
-
 
 #product_hoodie,
 #product_t,
-#product_shrits,
-#product_pants{
+#product_pants {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+    gap: 20px;
     width: 100%;
     height: 350px;
     position: relative;
@@ -400,18 +315,16 @@ body {
     white-space: nowrap; 
 }
 
-
-#product_hoodie .hoodie_details,
-#product_t .product_t,
-#product_shirts .shirts_details,
-#product_pants .pants_details{
-    flex: 0 0 auto; 
+.hoodie_details,
+.t_details,
+.pants_details {
+    position: relative;
+    align-items: center;
 }
 
-#product_hoodie .hoodie_detials img,
-#product_t .t_details img,
-#product_shirts .shirts_details img,
-#product_pants .pants_details img {
+.hoodie_details img,
+.t_details img,
+.pants_details img {
     max-width: 100%;
     height: auto;
     padding: 5%;
@@ -443,7 +356,6 @@ h1 {
 
 .hoodie,
 .t,
-.shirts,
 .pants{
     position: relative;
     width: 100%;
@@ -459,7 +371,6 @@ h1 {
 
 .hoodie p,
 .t p,
-.shirts p,
 .pants p {
     width: 100%;
     height: auto;
@@ -471,11 +382,7 @@ h1 {
 
 
 /* Contact Us Page */
-body {
-    margin: 0;
-    padding: 0;
-    padding-bottom: 100px;
-}
+
 
 #contact {
     width: 100%;
@@ -599,7 +506,7 @@ textarea {
 }
 
 
-/* Body styles */
+
 
 
 /* Modal styles */
@@ -753,3 +660,82 @@ label {
 
 
 
+/* Validation */
+#myForm {
+    width: 20%;
+    display: none;
+    position: fixed;
+    top: 40%;
+    right: 0;
+    transform: translate(-30%, -50%);
+    background-color: rgb(68, 84, 77);
+    color: white;
+    padding: 20px;
+    border: 1px solid #ccc;
+    border-radius: 5%;
+    z-index: 999; 
+}
+
+#name,
+#email {
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+}
+
+
+
+@media only screen and (max-width: 768px) {
+  
+    .welcome_msg {
+        width: 80%;
+        top: 20%;
+    }
+
+    .shop_by {
+        padding: 5%;
+    }
+
+  
+    #product_hoodie,
+    #product_t,
+    #product_pants {
+        height: auto;
+        white-space: normal;
+        overflow-x: hidden;
+    }
+
+   
+    .footer_container {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .bottom_footer {
+        width: 100%;
+        justify-content: center;
+    }
+}
+
+@media only screen and (max-width: 480px) {
+    .welcome_msg {
+        width: 90%;
+        top: 15%;
+    }
+
+    #product_hoodie,
+    #product_t,
+    #product_pants {
+        padding: 2%;
+        margin: 0;
+    }
+
+    .footer_container {
+        margin-top: 8%;
+    }
+
+    .bottom_footer {
+        width: 100%;
+        justify-content: center;
+    }
+}

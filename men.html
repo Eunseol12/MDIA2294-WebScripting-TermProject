@@ -1,29 +1,14 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <!-- <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>EcoWay</title>
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400..900;1,400..900&display=swap" rel="stylesheet">
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Expletus+Sans:ital,wght@0,400..700;1,400..700&family=Plus+Jakarta+Sans:ital,wght@0,200..800;1,200..800&family=Schoolbell&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/lightbox2/2.11.3/css/lightbox.min.css">
-    
-    <link rel="stylesheet" href="style.css"> -->
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>EcoWay</title>
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400..900;1,400..900&display=swap" rel="stylesheet">
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Expletus+Sans:ital,wght@0,400..700;1,400..700&family=Plus+Jakarta+Sans:ital,wght@0,200..800;1,200..800&family=Schoolbell&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/lightbox2/2.11.3/css/lightbox.min.css">
-    
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="..." crossorigin="anonymous">
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
@@ -38,34 +23,25 @@
                 </a>
             </nav>
             <nav>
-                <ul class="nav_links">
-                    <li><a href="about.html">About</a>
-                        <div class="dropdown_menu">
-                            <a href="about.html">Our Mission</a>
-                            <a href="about.html">Our Vision</a>                   
-                        </div>
+                <ul>
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                            Men
+                        </a>
+                        <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                            <li><a class="dropdown-item" href="men.html">Hoodies</a></li>
+                            <li><a class="dropdown-item" href="men.html">T-shirts</a></li>
+                            <li><a class="dropdown-item" href="men.html">Shirts</a></li>
+                            <li><a class="dropdown-item" href="men.html">Pants</a></li>
+                        </ul>
                     </li>
-                    <li><a href="men.html">Men</a>
-                        <div class="dropdown_menu">
-                            <a href="product_hoodie">Hoodies</a>
-                            <a href="product_t">T-shirts</a>
-                            <a href="product_shirts">Shirts</a>
-                            <a href="product_pants">Pants</a>                        
-                        </div>
-                    </li>
-                    <li><a href="women.html">Women</a>
-                        <div class="dropdown_menu">
-                            <a href="wproduct_hoodie">Hoodies</a>
-                            <a href="wproduct_t">T-shirts</a>
-                            <a href="wproduct_shirts">Shirts</a>
-                            <a href="wproduct_pants">Pants</a>                        
-                        </div>
-                    </li>
-                  
-                    <li><a href="contactUs.html">Contact Us</a>
-                        <div class="dropdown_menu">
-                            <a href="#">E-mail Us</a>          
-                        </div> 
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown2" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                            Contact Us
+                        </a>
+                        <ul class="dropdown-menu" aria-labelledby="navbarDropdown2">
+                            <li><a class="dropdown-item" href="contactUs.html">E-mail Us</a></li>
+                        </ul>
                     </li>
                 </ul>
             </nav>
@@ -73,93 +49,96 @@
                 <ul class="nav_menu">
                     <li><a href="#"><img src="images/search.png" alt="search" class="search"></a></li>
                     <li><a href="#"><img src="images/cart.png" alt="cart" class="cart"></a></li>
-                    <li><a href="#"><img src="images/account.png" alt="account" class="account"></a></li>
+                    <li><a href="#" id="accountLink"><img src="images/account.png" alt="account" class="account"></a></li>
                     <li><a href="#"><img src="images/menu.png" alt="menu" class="menu"></a></li>
                 </ul>
             </nav>
         </header>
     </div>
+
+    <form id="myForm">
+        <label for="name">Name:</label>
+        <input type="text" id="name" name="name" required>
+        <br>
+        <label for="email">Email:</label>
+        <input type="email" id="email" name="email" required>
+        <br>
+        <button type="submit">Submit</button>
+      </form>
+
+
     <div class="bg_men">
         <img src="men/bg_men.jpg" alt="imgae for men" class="img_mstatement">
         <p class="men_msg">Elevate your eco-conscious style with our sustainable men's clothing.<br>From tailored classics to casual essentials, find your perfect eco-friendly fit for any occasion.<br><br> Shop now for premium quality with a conscience.</p>
     </div>
     <h1>Hoodies</h1>   
-    <div id="product_hoodie">
-        <a href="men/h1.jpg" data-lightbox="hoodie-gallery"></a>
-            <div class="hoodie_details">
-                <img src="men/h1.jpg" alt="men hoodie" class="hoodie" class="hover-zoom">
-                <p>EcoBlend Cotton Hoodie <br> $29.99</p>
-            </div>
-            <div class="hoodie_details">
-                <a href="men/h2.jpg" data-lightbox="hoodie-gallery"></a>
-                    <img src="men/h2.jpg" alt="men hoodie" class="hoodie" class="hover-zoom">
-                    <p>Upcycled Comfort Hoodie <br> $25.99</p>
-            </div>
-            <div class="hoodie_details">
-                <a href="men/h3.jpg" data-lightbox="hoodie-gallery"></a>
-                    <img src="men/h3.jpg" alt="men hoodie" class="hoodie" class="hover-zoom">
-                    <p>Green Thread Basic <br> $34.99</p>
-            </div>
-            <div class="hoodie_details">
-                <a href="men/h4.jpg" data-lightbox="hoodie-gallery"></a>
-                    <img src="men/h4.jpg" alt="men hoodie" class="hoodie" class="hover-zoom">
-                    <p>EarthWise Hoodie <br> $45.99</p>
-            </div>
+    <div id="product_hoodie" class="grid-container">
+        
+        <div class="hoodie_details">
+            <a href="men/h1.jpg" data-lightbox="hoodie-gallery">
+            <img src="men/h1.jpg" alt="men hoodie" class="hoodie hover-zoom"></a>
+            <p>EcoBlend Cotton Hoodie <br> $29.99</p>
+        </div>
+        <div class="hoodie_details">
+            <a href="men/h2.jpg" data-lightbox="hoodie-gallery">
+            <img src="men/h2.jpg" alt="men hoodie" class="hoodie hover-zoom"></a>
+            <p>Upcycled Comfort Hoodie <br> $25.99</p>
+        </div>
+        <div class="hoodie_details">
+            <a href="men/h3.jpg" data-lightbox="hoodie-gallery">
+            <img src="men/h3.jpg" alt="men hoodie" class="hoodie hover-zoom"></a>
+            <p>Green Thread Basic <br> $34.99</p>
+        </div>
+        <div class="hoodie_details">
+            <a href="men/h4.jpg" data-lightbox="hoodie-gallery">
+            <img src="men/h4.jpg" alt="men hoodie" class="hoodie hover-zoom"></a>
+            <p>EarthWise Hoodie <br> $45.99</p>
+        </div>
     </div>
+    
     <h1>T-shirt</h1>
     <div id="product_t">
-        <div class="t_details">
-            <img src="men/t1.jpg" alt="men t" class="t">
+        <div class="t_details" class="grid-container">
+            <a href="men/t1.jpg" data-lightbox="t-gallery" data-title="Essential T-Shirt">
+            <img src="men/t1.jpg" alt="men t" class="t"></a>
             <p>Essential T-Shirt <br> $15.99 </p>
         </div>
-        <div class="t_details">
-            <img src="men/t2.jpg" alt="men t" class="t">
+        <div class="t_details" class="grid-container">
+            <a href="men/t2.jpg" data-lightbox="t-gallery" data-title="Essential T-Shirt">
+            <img src="men/t2.jpg" alt="men t" class="t"></a>
             <p>Premium Basic T-shirt <br> $17.99 </p>
         </div>
-        <div class="t_details">
-            <img src="men/t3.jpg" alt="men t" class="t">
+        <div class="t_details" class="grid-container">
+            <a href="men/t3.jpg" data-lightbox="t-gallery" data-title="Essential T-Shirt">
+            <img src="men/t3.jpg" alt="men t" class="t"></a>
             <p>Bamboo Essential T-shirt <br> $29.99</p>
         </div>
-        <div class="t_details">
-            <img src="men/t4.jpg" alt="men t" class="t">
+        <div class="t_details" class="grid-container">
+            <a href="men/t4.jpg" data-lightbox="t-gallery" data-title="Essential T-Shirt">
+            <img src="men/t4.jpg" alt="men t" class="t"></a>
             <p>Comfort Loose fit T-shirt <br> $22.99</p>
-        </div>
-    </div>
-    <h1>Shirts</h1>
-    <div id="product_shirts">
-        <div class="shirts_details">
-            <img src="men/s1.jpg" alt="men shirts" class="shirts">
-            <p>Cotton Basic Casual Shirt <br> $29.99 </p>
-        </div>
-        <div class="shirts_details">
-            <img src="men/s2.jpg" alt="men shirts" class="shirts">
-            <p>Organic Light Blue Shirt <br> $39.99</p>
-        </div>
-        <div class="shirts_details">
-            <img src="men/s4.jpg" alt="men shirts" class="shirts">
-            <p>Premium Bamboo Striped Shirt <br> $49.99</p>
-        </div>
-        <div class="shirts_details">
-            <img src="men/s3.jpg" alt="men shirts" class="shirts">
-            <p>Ultra Cozy Denim Shirt <br> $29.99</p>
         </div>
     </div>
     <h1>Pants</h1>
     <div id="product_pants">
-        <div class="pants_details">
-            <img src="men/p1.jpg" alt="men pants" class="pants">
+        <div class="pants_details" class="grid-container">
+            <a href="men/p1.jpg" data-lightbox="t-gallery" data-title="Essential T-Shirt">
+            <img src="men/p1.jpg" alt="men pants" class="pants"></a>
             <p>Upcycled Denim <br> $34.99</p>
         </div>
-        <div class="pants_details">
-            <img src="men/p2.jpg" alt="men pants" class="pants">
+        <div class="pants_details" class="grid-container">
+            <a href="men/p2.jpg" data-lightbox="t-gallery" data-title="Essential T-Shirt">
+            <img src="men/p2.jpg" alt="men pants" class="pants"></a>
             <p>Premium Straight Fit Denim <br> $69.99 </p>
         </div>
-        <div class="pants_details">
-            <img src="men/p3.jpg" alt="men pants" class="pants">
+        <div class="pants_details" class="grid-container">
+            <a href="men/p3.jpg" data-lightbox="t-gallery" data-title="Essential T-Shirt">
+            <img src="men/p3.jpg" alt="men pants" class="pants"></a>
             <p>Organic Cotton Pants <br> $49.99</p>
         </div>
-        <div class="pants_details">
-            <img src="men/p4.jpg" alt="men pants" class="pants">
+        <div class="pants_details" class="grid-container">
+            <a href="men/p3.jpg" data-lightbox="t-gallery" data-title="Essential T-Shirt">
+            <img src="men/p4.jpg" alt="men pants" class="pants"></a>
             <p>Comfort Regular Fit Jeans<br> $59.99</p>
         </div>
     </div>
@@ -204,12 +183,12 @@
     </div>
 
     
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/flickity/2.2.2/flickity.pkgd.min.js"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/masonry/4.2.2/masonry.pkgd.min.js"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/lightbox2/2.11.3/js/lightbox.min.js"></script>
-
-
+    <script src="https://cdn.jsdelivr.net/jquery.validation/1.16.0/jquery.validate.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.1/umd/popper.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
     <script src="script.js"></script>
-   
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js" integrity="..." crossorigin="anonymous"></script>
 </body>
 </html>

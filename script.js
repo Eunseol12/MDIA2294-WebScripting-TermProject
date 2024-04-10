@@ -19,7 +19,7 @@ document.addEventListener('DOMContentLoaded', function () {
         wrapAround: true
     });
 });
-
+//testimonial
 document.addEventListener('DOMContentLoaded', function () {
     var elem = document.querySelector('#testimonial-carousel');
     var flkty = new Flickity(elem, {
